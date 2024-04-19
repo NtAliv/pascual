@@ -1,0 +1,173 @@
+body{
+    background-color: rgb(82, 116, 195);
+    font-size: x-large;
+    justify-content: right;
+}
+nav{
+    justify-content: space-around;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    width: 105%;
+}
+nav ul li{
+    position: relative;
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding: 13px 150px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+.siu li:hover .siu2{display: block;
+padding: 15px 0px;
+}
+
+a:hover{color: aqua;
+background-color: blue;}
+
+
+
+.asdd{
+    margin-top: -75px;
+}
+
+.s1{margin-top: -300px;
+    margin-left: 913px;
+}
+
+.s2{margin-top: -300px;
+    margin-left: 513px;
+}
+
+.s3{margin-top: 100px;
+    margin-left: 113px;   
+}
+
+
+.s1:hover {filter: opacity(.53);}
+.s2:hover {filter: opacity(.53);}
+.s3:hover {filter: opacity(.53);}
+
+/*TRANSICIÓN*/
+.zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+  
+  /*Estilos Base*/
+  .contenedor-img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+    }
+    .contenedor-img .mascara,.contenedor-img .contenido {
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0
+      }
+      .contenedor-img img {
+      display: block;
+      position: relative;
+      
+      }
+      .contenedor-img h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      margin: 20px 0 0 0
+      }
+      .contenedor-img p {
+      font-size: 12px;
+      position: relative;
+      color: #fff;
+      padding: 10px 20px 10px;
+      text-align: center
+      }
+      .contenedor-img a.link {
+      display: inline-block;
+      text-decoration: none;
+      padding: 7px 14px;
+      background: #222;
+      color: #fff;
+      text-transform: uppercase;
+      box-shadow: 0 0 1px #000
+      }
+      .contenedor-img a.link:hover {
+      box-shadow: 0 0 5px #000
+      }
+  
+      /Ejemplo 1/
+  .ejemplo-1 img {
+    transition: all 0.2s linear;
+    }
+    .ejemplo-1 .mascara {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    }
+    .ejemplo-1 h2 {
+    transform: translateX(-200px);/Desplazamos a la izquierda/
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    }
+    .ejemplo-1 p {
+    transform: translateX(200px);/Desplazamos a la derecha/
+    opacity: 0;
+    transition: all 0.4s linear;
+    }
+    .ejemplo-1 a.link{
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100px)/Desplazamos para abajo/
+    }
+    .ejemplo-1:hover img {
+    transform: scale(1.1);/Damos un ligero zoom a la imagen/
+    }
+    .ejemplo-1:hover .mascara {
+    opacity: 1;
+    }
+    .ejemplo-1:hover h2,
+    .ejemplo-1:hover p,
+    .ejemplo-1:hover a.link {
+    opacity: 1;
+    transform: translateX(0px);/Regresamos a las posiciones originales/
+    }
+    .ejemplo-1:hover p {
+    transition-delay: 0.1s;
+    }
+    .ejemplo-1:hover a.link {
+    transition-delay: 0.2s; /Aplicamos un pequeño retardo para que se muestre al final/
+    transform: translateY(0px);
+    }
